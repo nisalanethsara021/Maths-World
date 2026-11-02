@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ගණිත ලෝකය - O/L සහ සාමාන්‍ය ගණිතය සිංහලෙන් ඉගෙන ගන්න. සූත්‍ර, රූප සටහන් සහ ගණක යන්ත්‍ර.">
+  <meta name="theme-color" content="#080d1b">
+  <title>ගණිත ලෝකය | Sinhala Mathematics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="ගණිත ලෝකය මුල් පිටුව">
+      <span class="brand-mark">∑</span><span><b>ගණිත ලෝකය</b><small>MATHS • EXPLORE • LEARN</small></span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="#topics">පාඩම්</a><a href="#formulas">සූත්‍ර</a><a href="#calculators">ගණක</a><a href="#practice">අභ්‍යාස</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="වර්ණ තේමාව වෙනස් කරන්න">☼</button>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> සිංහල ගණිත ඉගෙනුම් අවකාශය</div>
+        <h1>ගණිතය <span>සරලව</span><br>දකින්න. තේරුම්ගන්න.</h1>
+        <p>සූත්‍ර කටපාඩම් කරනවාට වඩා ඒවා තේරුම් ගනිමු. රූප සටහන්, සජීවී ගණනය කිරීම් සහ පියවරෙන් පියවර පැහැදිලි කිරීම් සමඟ ගණිත ලෝකයට පිවිසෙන්න.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#topics">පාඩම් ආරම්භ කරන්න <span>↗</span></a><a class="btn btn-ghost" href="#calculators">ගණක භාවිතා කරන්න</a></div>
+        <div class="hero-stats"><div><b>සිංහල</b><small>පැහැදිලි කිරීම්</small></div><div><b>Interactive</b><small>ගණනය කිරීම්</small></div><div><b>O/L +</b><small>සාමාන්‍ය ගණිතය</small></div></div>
+      </div>
+      <div class="hero-art" aria-label="ත්‍රිමාණ ගණිත හැඩතල">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="floating-symbol symbol-pi">π</div><div class="floating-symbol symbol-root">√</div>
+        <div class="cube"><div class="cube-face front">x²</div><div class="cube-face back">π</div><div class="cube-face right">∑</div><div class="cube-face left">√</div><div class="cube-face top">△</div><div class="cube-face bottom">∞</div></div>
+        <div class="art-caption"><span class="caption-dot"></span> ගණිතය සජීවීව අත්විඳින්න</div>
+      </div>
+    </section>
+
+    <section class="section-wrap quick-strip">
+      <div><span class="strip-icon">▦</span><span><b>විෂය කොටස්</b><small>ප්‍රධාන මාතෘකා</small></span></div>
+      <div><span class="strip-icon">ƒ</span><span><b>සූත්‍ර පුස්තකාලය</b><small>ඉක්මන් සෙවුම</small></span></div>
+      <div><span class="strip-icon">⌗</span><span><b>ගණක යන්ත්‍ර</b><small>ක්ෂණික පිළිතුරු</small></span></div>
+      <div><span class="strip-icon">✦</span><span><b>දැනුම පරීක්ෂාව</b><small>පුහුණු ප්‍රශ්න</small></span></div>
+    </section>
+
+    <section class="section-wrap section-block" id="topics">
+      <div class="section-heading"><div><div class="eyebrow">LEARNING PATH</div><h2>ගණිත <span>පාඩම්</span></h2><p>ඔබට අවශ්‍ය මාතෘකාව තෝරාගෙන ඉගෙනීම ආරම්භ කරන්න.</p></div><span class="section-index">01 / 04</span></div>
+      <div class="topic-grid" id="topicGrid"></div>
+    </section>
+
+    <section class="section-wrap section-block" id="formulas">
+      <div class="section-heading"><div><div class="eyebrow">FORMULA LIBRARY</div><h2>සූත්‍ර <span>පුස්තකාලය</span></h2><p>සූත්‍ර සොයන්න, ඒවායේ අර්ථය සහ භාවිතය ඉගෙන ගන්න.</p></div><span class="section-index">02 / 04</span></div>
+      <div class="formula-tools"><label class="search-box"><span>⌕</span><input id="formulaSearch" type="search" placeholder="සූත්‍රයක් හෝ මාතෘකාවක් සොයන්න..."></label><select id="formulaCategory" aria-label="සූත්‍ර කාණ්ඩය"><option value="all">සියලුම කාණ්ඩ</option></select></div>
+      <div class="formula-grid" id="formulaGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>ගැළපෙන සූත්‍ර හමු නොවීය.</p>
+    </section>
+
+    <section class="section-wrap section-block" id="calculators">
+      <div class="section-heading"><div><div class="eyebrow">SMART CALCULATORS</div><h2>අන්තර්ක්‍රියාකාරී <span>ගණක</span></h2><p>අගයන් ඇතුළත් කර ප්‍රතිඵලය සහ ගණනය කිරීමේ ක්‍රමය බලන්න.</p></div><span class="section-index">03 / 04</span></div>
+      <div class="calculator-layout">
+        <div class="calculator-tabs" role="tablist" aria-label="ගණක වර්ග">
+          <button class="calc-tab active" data-calc="circle">වෘත්ත වර්ගඵලය</button>
+          <button class="calc-tab" data-calc="triangle">ත්‍රිකෝණ වර්ගඵලය</button>
+          <button class="calc-tab" data-calc="pythagoras">පයිතගරස්</button>
+          <button class="calc-tab" data-calc="percentage">ප්‍රතිශතය</button>
+          <button class="calc-tab" data-calc="quadratic">වර්ගජ සමීකරණය</button>
+        </div>
+        <div class="calculator-card">
+          <div class="calc-title"><div><span class="eyebrow">LIVE CALCULATION</span><h3 id="calcTitle">වෘත්තයක වර්ගඵලය</h3></div><span class="calc-symbol">π</span></div>
+          <div id="calcInputs" class="calc-inputs"></div>
+          <div class="calc-result"><small>ප්‍රතිඵලය</small><strong id="calcResult">153.94</strong><p id="calcSteps">A = π × r²</p></div>
+          <div class="calc-visual" id="calcVisual"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block practice-section" id="practice">
+      <div class="section-heading"><div><div class="eyebrow">QUICK CHALLENGE</div><h2>දැනුම <span>පරීක්ෂා කරමු</span></h2><p>කෙටි ප්‍රශ්නයකට පිළිතුරු දී ඔබේ දැනුම පරීක්ෂා කරන්න.</p></div><span class="section-index">04 / 04</span></div>
+      <div class="quiz-card">
+        <div class="quiz-number">ප්‍රශ්නය <b id="quizNumber">01</b></div><h3 id="quizQuestion">ත්‍රිකෝණයක අභ්‍යන්තර කෝණ තුනේ එකතුව කීයද?</h3>
+        <div class="quiz-options" id="quizOptions"></div>
+        <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+        <button class="btn btn-primary" id="nextQuestion">ඊළඟ ප්‍රශ්නය <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="section-wrap formula-note">
+      <div class="note-icon">✦</div><div><b>ඉගෙනීමේ කුඩා උපදෙසක්</b><p>සූත්‍රයක් භාවිතා කිරීමට පෙර එහි සෑම සංකේතයකින්ම අදහස් කරන්නේ කුමක්දැයි හඳුනාගන්න. ඉන්පසු අගයන් ආදේශ කර ඒකකයද ලියන්න.</p></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-mark">∑</span><span><b>ගණිත ලෝකය</b><small>LEARN MATHS WITH CONFIDENCE</small></span></a><p>© <span id="year"></span> ගණිත ලෝකය. ඉගෙනීම සඳහා නිර්මාණය කරන ලදී.</p><a href="#home" class="back-top">ඉහළට ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
